@@ -5,7 +5,7 @@ gem 'newrelic_rpm'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 
 gem "twitter-bootstrap-rails"
 # Use SCSS for stylesheets
@@ -31,6 +31,10 @@ gem 'jbuilder', '~> 1.2'
 
 group :development, :test do
 	gem 'rspec-rails'
+	gem 'sqlite3', '1.3.7'
+end
+group :test do
+  gem 'capybara', '2.1.0'
 end
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -48,3 +52,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
