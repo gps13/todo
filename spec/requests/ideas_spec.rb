@@ -1,11 +1,8 @@
 require 'spec_helper'
 
-describe "Ideas" do
-  describe "GET /ideas" do
-    it "works! (now write some real specs)" do
-      # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
-      get ideas_index_path
-      response.status.should be(200)
-    end
+describe "Todo list Home page" do
+  it "should have the content 'Todo'" do
+    visit :root_path
+    expect(page).to have_content('Todo')
   end
 end
