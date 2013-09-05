@@ -5,6 +5,7 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 /config/newrelic.yml
+/config/initializers/carrier*
 # Ignore bundler config.
 /.bundle
 
