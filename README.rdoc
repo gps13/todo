@@ -1,3 +1,3 @@
 == README
 
-This is a sample todo app. I moved the repo to bitbucket.
+This is a sample todo app with Rails. I moved the repo to bitbucket.
