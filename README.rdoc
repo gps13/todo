@@ -1,3 +1,5 @@
 == README
 
 This is a sample todo app with Rails. I moved the repo to bitbucket.
+this is a live app and will change all the time...
+http://todo-beyond-2.herokuapp.com/
